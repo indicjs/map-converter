@@ -7,5 +7,5 @@ System.import('lib/converter').then(function(converter) {
     console.log("Make sure you give the filename to convert as a command line argument");
   }
   var map = converter.getJSONMap(infile);
-  console.dir(map);
+  console.log(JSON.stringify(map, null, 2));
 });
